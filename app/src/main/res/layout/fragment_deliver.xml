@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.dayou.com.baoma.view.fragment.DeliverFragment">
+
+    <android.dayou.com.baoma.view.myview.XListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+    <FrameLayout
+        android:id="@+id/nulllayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/background_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/nullimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height90"
+                android:src="@drawable/nodata" />
+
+            <TextView
+                android:id="@+id/nulltv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nullimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/layout_margin4"
+                android:text="@string/nopresent" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

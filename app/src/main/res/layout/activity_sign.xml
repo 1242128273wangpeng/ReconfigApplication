@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray2">
+    <include layout="@layout/layout_head_2"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="如果中断签到，要重新开始哦~"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="#c1c1c1"
+        android:textSize="@dimen/margin12"
+        android:layout_gravity="center"/>
+    <ListView
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/text_grey3"
+            android:text="连续签到"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/pink2"
+            android:text="30"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/text_grey3"
+            android:text="天，获得积分越多"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/text_grey3"
+        android:textSize="@dimen/size_15"
+        android:text="使用积分可以免费兑换礼品"/>
+        <Button
+            android:id="@+id/fenxiang2"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_fenxian"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="@dimen/layout_margin2"
+            android:layout_marginBottom="15dp"
+            android:paddingRight="@dimen/layout_margin2"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:text="每日分享APP获10积分"
+            />
+
+        <Button
+            android:id="@+id/fenxiang3"
+            android:layout_width="200dp"
+            android:visibility="visible"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_yaoqin"
+            android:layout_marginBottom="5dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:text="邀请好友注册获得20积分"/>
+
+</LinearLayout>

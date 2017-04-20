@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_head_2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray2"
+        android:gravity="center"
+        android:paddingBottom="@dimen/layout_margin2"
+        android:paddingTop="@dimen/layout_margin2"
+        android:text="@string/weigh_remarktext"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/layout_margin2"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin2">
+
+
+        <TextView
+            android:id="@+id/cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="cm"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_18"
+            />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/cm"
+            android:textColorHint="@color/greyfont7"
+            android:background="@null"
+            android:digits="1234567890.123456789"
+            android:hint="输入身高"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/layout_margin"
+            android:paddingRight="@dimen/layout_margin"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_18"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:background="@color/gray_xian"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/layout_margin2"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin2">
+
+
+        <TextView
+            android:id="@+id/progestationkg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="kg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_18"
+            />
+
+        <EditText
+            android:id="@+id/yqweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/progestationkg"
+            android:background="@null"
+            android:digits="1234567890.123456789"
+            android:hint="孕前体重"
+            android:textColorHint="@color/greyfont7"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/layout_margin"
+            android:paddingRight="@dimen/layout_margin"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_18"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:background="@color/gray_xian"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/layout_margin2"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin2">
+
+
+        <TextView
+            android:id="@+id/tokg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="kg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_18"
+            />
+
+        <EditText
+            android:id="@+id/yhweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tokg"
+            android:background="@null"
+            android:textColorHint="@color/greyfont7"
+            android:digits="1234567890.123456789"
+            android:hint="今日体重"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/layout_margin"
+            android:paddingRight="@dimen/layout_margin"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_18"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:background="@color/gray_xian"
+        />
+
+    <TextView
+        android:id="@+id/weightguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:drawableLeft="@drawable/weight_small"
+        android:drawablePadding="@dimen/padding5"
+        android:paddingBottom="@dimen/layout_margin2"
+        android:paddingRight="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin2"
+        android:text="@string/weight_fingerpost"
+        android:textColor="@color/maintop"/>
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:background="@drawable/anniu3"
+        android:gravity="center"
+        android:paddingBottom="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin"
+        android:text="@string/order"
+        android:textColor="@color/background_white"
+        android:textSize="@dimen/button"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>

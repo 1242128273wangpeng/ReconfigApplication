@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_head_2"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@color/background_white"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_margin2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_point_pre"
+                android:layout_gravity="top"
+                android:drawablePadding="@dimen/padding5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weightguide"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_margin2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_point_pre"
+                android:layout_gravity="top"
+                android:drawablePadding="@dimen/padding5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="孕前胖瘦度\n 数值为负是偏瘦，数值为正式偏胖\n 数值越接近0，体重越标准。\n 数值超过20%要特别注意"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_margin2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_point_pre"
+                android:layout_gravity="top"
+                android:drawablePadding="@dimen/padding5" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <android.dayou.com.baoma.view.myview.JustifyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/layout_margin"
+                    android:ellipsize="end"
+                    android:text="整个孕期的理想增重\n 偏瘦型的准妈妈，整个孕期的理想增重为12-15kg。体型标准的准妈妈增长12kg左右为宜。体型偏胖的准妈妈孕期增长7-10kg左右。"/>
+                <android.dayou.com.baoma.view.myview.JustifyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/layout_margin"
+                    android:ellipsize="end"
+                    android:text="孕妇体重增加的“速度”与“重量”一样重要。孕早期，体重应增加1-1.5kg；孕中期，每周增加0.25-0.35kg；孕晚期，每周增加0.5kg左右。"/>
+                <android.dayou.com.baoma.view.myview.JustifyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/layout_margin"
+                    android:ellipsize="end"
+                    android:text="要是在头3个月中体重增加不够的话，那么看看你是否患有失眠或厌食，如果其他都正常，那就不必为体重增加不足而担心。"/>
+                <android.dayou.com.baoma.view.myview.JustifyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="体型偏胖的准妈妈，在4-9个月时，体重增长要有所控制，以接近理想增长为佳。如果怀疑体重增长异常，应以医生的建议为准。"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_head_2"/>
+
+    <android.dayou.com.baoma.view.myview.customview.HeadZoomScrollView
+        android:id="@+id/dzsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/hospital"/>
+            <!--android:scaleType="centerCrop"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_margin"
+                android:paddingTop="@dimen/layout_margin2"
+                android:text="@string/chinesename_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_margin"
+                android:text="@string/hospital_type"
+                android:textColor="@color/bg_grey2"
+                android:textSize="@dimen/size_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin2"
+                android:background="@color/greybg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/hopslocation"
+                android:drawablePadding="@dimen/divier2"
+                android:padding="@dimen/layout_margin"
+                android:text="@string/hospital_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15"/>
+
+            <TextView
+                android:id="@+id/tell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:drawableLeft="@drawable/aboutcall"
+                android:drawablePadding="@dimen/dp4"
+                android:paddingLeft="@dimen/layout_margin"
+                android:text="@string/tell"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@color/greybg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_margin"
+                android:text="@string/hospital_abstract"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:background="@color/linecolor"/>
+
+            <android.dayou.com.baoma.view.myview.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:ellipsize="end"
+                android:paddingBottom="@dimen/layout_margin"
+                android:text="@string/hospital_abstract_content"
+                android:textColor="@color/bg_grey2"
+                android:textSize="@dimen/size_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin2"
+                android:background="@color/greybg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_margin"
+                android:text="医院特色"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:background="@color/linecolor"/>
+
+            <android.dayou.com.baoma.view.myview.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:ellipsize="end"
+                android:paddingBottom="@dimen/layout_margin"
+                android:text="@string/tese"
+                android:textColor="@color/bg_grey2"
+                android:textSize="@dimen/size_15"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@color/greybg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_margin"
+                android:text="@string/particulars"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:background="@color/linecolor"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="@string/opening_time"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="@string/opening_time_text"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="@string/hospital_category"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="@string/hospital_category_text"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="@string/hospital_level"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="@string/hospital_level_text"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="@string/hospital_range"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="@string/hospital_range_text"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="@string/district"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="@string/district_text"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/layout_margin4"
+                android:paddingLeft="@dimen/layout_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="官网："
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingTop="@dimen/padding5"
+                    android:text="www.czhfz.cn"
+                    android:textColor="@color/bg_grey2"
+                    android:textSize="@dimen/size_15"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.dayou.com.baoma.view.myview.customview.HeadZoomScrollView>
+</LinearLayout>

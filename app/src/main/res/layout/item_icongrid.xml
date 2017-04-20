@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/miconitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contentblock_bg">
+
+    <ImageView
+        android:id="@+id/gridimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp12"
+        android:src="@drawable/baby" />
+
+    <TextView
+        android:id="@+id/gridtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp12"
+        android:text="预约记录"
+        android:textColor="@color/blacktext2"
+        android:textSize="@dimen/dp28" />
+</RelativeLayout>

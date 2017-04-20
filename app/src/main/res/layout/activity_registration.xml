@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/greybg"
+              android:orientation="vertical">
+
+    <android.dayou.com.baoma.view.myview.customview.TitleBar
+        android:id="@+id/registrationtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+
+    <include layout="@layout/linesplite"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/cilick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/greybg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp80"
+                    android:background="@color/background_gray2"
+                    android:gravity="center"
+                    android:text="@string/maketip"
+                    android:textColor="@color/text_grey3"
+                    android:textSize="@dimen/dp28"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/checktype"
+                        android:textColor="@color/text_grey3"
+                        android:textSize="@dimen/dp28"/>
+
+                    <RadioGroup
+                        android:id="@+id/radio_checktype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp76"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/siweiyy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawablePadding="3dp"
+                            android:drawableRight="@drawable/choose_default"
+                            android:text="四维预约"
+                            android:textColor="@color/greytext"
+                            android:textSize="@dimen/dp28"/>
+
+                        <RadioButton
+                            android:id="@+id/chankeyy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp30"
+                            android:button="@null"
+                            android:drawablePadding="3dp"
+                            android:drawableRight="@drawable/choose_default"
+                            android:text="产科预约"
+                            android:textColor="@color/greytext"
+                            android:textSize="@dimen/dp28"/>
+
+                        <RadioButton
+                            android:id="@+id/fukeyy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp30"
+                            android:button="@null"
+                            android:drawablePadding="3dp"
+                            android:drawableRight="@drawable/choose_default"
+                            android:text="妇科预约"
+                            android:textColor="@color/greytext"
+                            android:textSize="@dimen/dp28"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textColor="@color/text_grey3"
+                        android:textSize="@dimen/dp28"/>
+
+                    <android.dayou.com.baoma.view.myview.MyEditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp76"
+                        android:background="@null"
+                        android:drawableRight="@drawable/clear"
+                        android:hint="@string/importname"
+                        android:textColorHint="@color/greyfont2"
+                        android:textSize="@dimen/dp28"/>
+
+                </LinearLayout>
+
+                <android.view.View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:background="@color/background_gray2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tel"
+                        android:textColor="@color/text_grey3"
+                        android:textSize="@dimen/dp28"/>
+
+                    <android.dayou.com.baoma.view.myview.MyEditText
+                        android:id="@+id/tell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp76"
+                        android:background="@null"
+                        android:drawableRight="@drawable/clear"
+                        android:hint="@string/importtel"
+                        android:maxLength="11"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:textColorHint="@color/greyfont2"
+                        android:textSize="@dimen/dp28"/>
+
+                </LinearLayout>
+
+                <android.view.View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:background="@color/background_gray2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qq"
+                        android:textColor="@color/text_grey3"
+                        android:textSize="@dimen/dp28"/>
+
+                    <android.dayou.com.baoma.view.myview.MyEditText
+                        android:paddingLeft="1dp"
+                        android:id="@+id/qq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp86"
+                        android:background="@null"
+                        android:drawableRight="@drawable/clear"
+                        android:hint="@string/import_qq"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:textColorHint="@color/greyfont2"
+                        android:textSize="@dimen/dp28"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.view.View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@color/background_gray2"/>
+
+            <LinearLayout
+                android:id="@+id/appointmentitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/appointment_time"
+                    android:textColor="@color/text_grey3"
+                    android:textSize="@dimen/dp28"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/dp19"
+                    android:text="@string/importappointment_time"
+                    android:textColor="@color/greyfont2"
+                    android:textSize="@dimen/dp28"/>
+
+                <TextView
+                    android:id="@+id/timetip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_weight="1"
+                    android:text="@string/importappointment_timetip"
+                    android:textColor="@color/maintop"
+                    android:textColorHint="@color/greyfont2"
+                    android:textSize="@dimen/dp22"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/consulting_details"
+                    android:textColor="@color/text_grey3"
+                    android:textSize="@dimen/dp28"/>
+
+                <EditText
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/anniu2"
+                    android:gravity="top"
+                    android:hint="@string/importconsulting_details"
+                    android:padding="@dimen/dp20"
+                    android:textColorHint="@color/greyfont2"
+                    android:textSize="@dimen/dp28"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dp24"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:paddingTop="@dimen/dp24">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/anniu2"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingLeft="@dimen/dp34"
+                    android:paddingRight="@dimen/dp34"
+                    android:paddingTop="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/dp24"
+                        android:text="@string/addhistoryuserinfo"
+                        android:textColorHint="@color/greyfont2"
+                        android:textSize="@dimen/dp22"/>
+
+                    <TextView
+                        android:id="@+id/addhistorytv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/addhistory"
+                        android:paddingBottom="@dimen/dp4"
+                        android:paddingLeft="@dimen/dp20"
+                        android:paddingRight="@dimen/dp20"
+                        android:paddingTop="@dimen/dp4"
+                        android:text="@string/addhistoryuser"
+                        android:textSize="@dimen/dp24"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp20"
+                android:background="@drawable/anniu1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp20"
+                android:paddingTop="@dimen/dp20"
+                android:text="@string/submit_order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp38"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

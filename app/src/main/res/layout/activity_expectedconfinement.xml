@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head_2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray2"
+        android:padding="@dimen/layout_margin2"
+        android:text="@string/yucanqibeizhu"
+        android:textSize="@dimen/size_15" />
+
+    <RelativeLayout
+        android:id="@+id/last_menstrual_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white">
+
+        <TextView
+            android:id="@+id/last_menstrual_periodtext"
+            style="@style/StandardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin2"
+            android:text="@string/last_menstrual_period"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:drawableRight="@drawable/right"
+            android:paddingRight="@dimen/activity_horizontal_margin" />
+
+        <RelativeLayout
+            android:id="@+id/layou1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/time"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/last_menstrual_periodtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:text="2016-6-16"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/size_18" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/layou1"
+            android:background="@color/background_gray"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/periodsum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/periodsumtext"
+            style="@style/StandardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin2"
+            android:text="@string/periodsum"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_margin2"
+            android:contentDescription="@null"
+            android:text="天"
+            android:textColor="@color/bg_grey2"
+            android:textSize="@dimen/size_18" />
+
+        <TextView
+            android:id="@+id/period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/sum"
+            android:scaleType="centerInside"
+            android:text="4~7"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/size_18" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_gray"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:id="@+id/period2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/periodtext"
+            style="@style/StandardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin2"
+            android:text="@string/period"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/sum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_margin2"
+            android:contentDescription="@null"
+            android:text="天"
+            android:textColor="@color/bg_grey2"
+            android:textSize="@dimen/size_18" />
+
+        <TextView
+            android:id="@+id/periodname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/sum2"
+            android:scaleType="centerInside"
+            android:text="28~30"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/size_18" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_gray"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/yucantime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin60"
+        android:background="@color/background_gray2"
+        android:gravity="center"
+        android:padding="@dimen/layout_margin2"
+        android:text="预产期"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/size_20" />
+</LinearLayout>

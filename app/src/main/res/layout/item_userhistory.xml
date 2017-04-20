@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/historyitem"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/historyheight"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/layout_margin5"
+    android:paddingRight="@dimen/layout_margin5"
+    >
+
+    <TextView
+        android:id="@+id/historyusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text=""
+        android:textSize="@dimen/fab_margin" />
+
+    <TextView
+        android:id="@+id/historyuserphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/historyusername"
+        android:layout_marginTop="@dimen/divier2"
+        android:text=""
+        android:textSize="@dimen/text_12" />
+
+    <TextView
+        android:id="@+id/historyuserqq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin35"
+        android:layout_marginTop="@dimen/dp66"
+        android:layout_toRightOf="@id/historyuserphone"
+        android:text=""
+        android:textSize="@dimen/text_12"/>
+
+    <ImageView
+        android:id="@+id/historyimg"
+        android:padding="@dimen/corners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/choose_default" />
+</RelativeLayout>

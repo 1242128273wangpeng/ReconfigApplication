@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp20">
+
+        <TextView
+            android:id="@+id/tvZhiDing0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zhiding"
+            android:gravity="center"
+            android:text="置顶"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp30"/>
+
+        <TextView
+            android:id="@+id/tvStick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_toRightOf="@id/tvZhiDing0"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="sfsafsafsdgsdgsdgsdgsdgsdgsdsdfsfsfsssdssdsdssssdsfsafsafsdgsdgsdgsdgsdgsdgsdsdfsfsfsssdssdsdssssdvsfsafsafsdgsdgsdgsdgsdgsdgsdsdfsfsfsssdssdsdssssdsfsafsafsdgsdgsdgsdgsdgsdgsdsdfsfsfsssdssdsdssssdsfsafsafsdgsdgsdgsdgsdgsdgsdsdfsfsfsssdssdsdssssd"
+            android:textSize="@dimen/dp30"/>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottomline"
+        layout="@layout/splitline"/>
+</LinearLayout>

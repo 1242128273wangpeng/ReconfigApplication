@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/llRecItem"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/ivYunMa"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/tvYuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="孕妈圈"
+        android:textColor="@color/quanleitextcolor"
+        android:textSize="@dimen/dp24"/>
+    <!--<LinearLayout
+        android:id="@+id/llYuma"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/ivYunMa"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:src="@drawable/yunmaquan" />
+
+        <TextView
+            android:id="@+id/tvYunma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivYunMa"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="孕妈圈"
+            android:textSize="@dimen/dp24"
+            android:textColor="@color/quanzitextcolor"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llShenghuo"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivShenghuo"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:src="@drawable/shenghuoquan" />
+
+        <TextView
+            android:id="@+id/tvShenghuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivShenghuo"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="生活圈"
+            android:textSize="@dimen/dp24"
+            android:textColor="@color/quanzitextcolor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llXibao"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivXibao"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:src="@drawable/xibaoquan" />
+
+        <TextView
+            android:id="@+id/tvXibao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivXibao"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="喜报圈"
+            android:textSize="@dimen/dp24"
+            android:textColor="@color/quanzitextcolor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBaoma"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:id="@+id/ivBaoma"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:src="@drawable/baomaquan"
+            />
+        <TextView
+            android:id="@+id/tvBaoma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivBaoma"
+            android:layout_marginTop="@dimen/dp20"
+            android:textSize="@dimen/dp24"
+            android:textColor="@color/quanzitextcolor"
+            android:text="宝马圈" />
+    </LinearLayout>
+-->
+</LinearLayout>

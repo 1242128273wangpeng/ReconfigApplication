@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/dibu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/layout_margin">
+
+        <LinearLayout
+            android:id="@+id/bus_offer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shouyeyes"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/hometext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding5"
+                android:text="首页"
+                android:textColor="@color/gray_xian"/>
+
+            <View
+                android:id="@+id/aaa"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+            <!-- android:textColor="@color/bg_white" android:textSize="16sp" -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/knowledge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/knowledgeimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zhuanglanno"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/knowledgetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding5"
+                android:text="专栏"
+                android:textColor="@color/gray_xian"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/circleoffriends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/circleoffriendsimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shequno"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/circleoffriendstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding5"
+                android:text="社区"
+                android:textColor="@color/gray_xian"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/integralmall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/integralmallimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shangchengno"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/integralmalltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding5"
+                android:text="商城"
+                android:textColor="@color/gray_xian"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yiyuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wono"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/hospitaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding5"
+                android:text="我的"
+                android:textColor="@color/gray_xian"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignTop="@id/dibu"
+        android:background="#cccccc"></View>
+
+    <android.dayou.com.baoma.view.myview.customview.CustomViewPage
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/dibu"
+        android:overScrollMode="never"/>
+</RelativeLayout>

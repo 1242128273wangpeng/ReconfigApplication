@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_head_2"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/yuejinno"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bk"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/headdefault"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/background_white"
+                        android:textSize="@dimen/size_15"
+                        />
+
+                    <TextView
+                        android:id="@+id/zw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/layout_margin"
+                        android:textColor="@color/background_white"
+                        android:textSize="@dimen/size_13"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/note"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:text="点击留言"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/zyd"
+                android:drawablePadding="@dimen/layout_margin"
+                android:padding="@dimen/layout_margin2"
+                android:text="执业点"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/layout_margin2"
+                    android:text="常州红房子妇产医院"
+                    android:textColor="@color/text_grey3"
+                    android:textSize="@dimen/size_13"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/layout_margin2"
+                    android:text="妇产科"
+                    android:textColor="@color/text_grey3"
+                    android:textSize="@dimen/size_13"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/background_gray2"/>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/techang"
+                android:drawablePadding="@dimen/layout_margin"
+                android:padding="@dimen/layout_margin2"
+                android:text="特长"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15"/>
+
+            <android.dayou.com.baoma.view.myview.JustifyTextView
+                android:id="@+id/techang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin2"
+                android:layout_marginRight="@dimen/layout_margin2"
+                android:ellipsize="end"
+                android:textColor="@color/text_grey3"
+                android:textSize="@dimen/size_13"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/background_gray2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/techang"
+                android:drawablePadding="@dimen/layout_margin"
+                android:padding="@dimen/layout_margin2"
+                android:text="简介"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15"/>
+
+            <android.dayou.com.baoma.view.myview.JustifyTextView
+                android:id="@+id/jianjie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin2"
+                android:layout_marginRight="@dimen/layout_margin2"
+                android:ellipsize="end"
+                android:textColor="@color/text_grey3"
+                android:textSize="@dimen/size_13"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <include layout="@layout/layout_head_2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp112">
+    <com.changzhoureconfig.yimeng.com.reconfigapplication.ui.views.MyEditText
+        android:id="@+id/tell"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp112"
+        android:layout_marginLeft="@dimen/dp80"
+        android:layout_marginRight="@dimen/dp80"
+        android:background="@null"
+        android:drawableLeft="@drawable/register_call"
+        android:drawablePadding="@dimen/dp20"
+        android:drawableRight="@drawable/clear"
+        android:hint="@string/settell"
+        android:padding="@dimen/dp20"
+        android:phoneNumber="true"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp32" />
+
+    <View
+        android:layout_alignBottom="@id/tell"
+        android:layout_width="290dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="@dimen/dp80"
+        android:background="@color/greytext" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp112"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@null"
+                android:drawableLeft="@drawable/checkcode"
+                android:drawablePadding="@dimen/dp20"
+                android:hint="@string/input_verification"
+                android:maxLength="11"
+                android:numeric="integer"
+                android:padding="@dimen/dp20"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp32" />
+
+            <View
+                android:layout_alignBottom="@id/verification"
+                android:layout_width="170dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="0.5dp"
+                android:background="@color/greytext" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/getcode"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp80"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@drawable/anniu1"
+            android:text="@string/testgetcode"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="@dimen/dp24" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp112">
+
+        <com.changzhoureconfig.yimeng.com.reconfigapplication.ui.views.MyEditText
+            android:id="@+id/set_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp80"
+            android:layout_marginRight="@dimen/dp160"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@null"
+            android:drawableLeft="@drawable/register_password"
+            android:drawablePadding="@dimen/dp20"
+            android:drawableRight="@drawable/clear"
+            android:hint="@string/reset_password"
+            android:padding="@dimen/dp20"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp32" />
+
+        <ImageView
+            android:id="@+id/password_seeit"
+            android:layout_width="@dimen/dp76"
+            android:layout_height="@dimen/dp76"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp80"
+            android:layout_marginTop="@dimen/dp48"
+            android:padding="@dimen/dp14"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/close"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="290dp"
+            android:layout_height="0.5dp"
+            android:layout_alignBottom="@id/set_password"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="@dimen/dp80"
+            android:background="@color/greytext" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp112">
+
+        <com.changzhoureconfig.yimeng.com.reconfigapplication.ui.views.MyEditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp80"
+            android:layout_marginRight="@dimen/dp160"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@null"
+            android:drawableLeft="@drawable/register_password"
+            android:drawablePadding="@dimen/dp20"
+            android:drawableRight="@drawable/clear"
+            android:hint="@string/confirm_password"
+            android:padding="@dimen/dp20"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp32" />
+
+        <ImageView
+            android:id="@+id/confirm_seeit"
+            android:layout_width="@dimen/dp76"
+            android:layout_height="@dimen/dp76"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp80"
+            android:layout_marginTop="@dimen/dp48"
+            android:padding="@dimen/dp14"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/close"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="290dp"
+            android:layout_height="0.5dp"
+            android:layout_alignBottom="@id/confirm_password"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="@dimen/dp80"
+            android:background="@color/greytext" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp80"
+        android:layout_marginRight="@dimen/dp80"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/anniu1"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp32" />
+</LinearLayout>

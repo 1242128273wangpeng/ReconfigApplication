@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/record11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin">
+
+        <TextView
+            android:id="@+id/btn02"
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-10dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="姓  名"></TextView>
+
+        <TextView
+            android:id="@+id/name2"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"></TextView>
+
+        <TextView
+            android:id="@+id/btn04"
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center"
+            android:text="年龄" />
+
+        <TextView
+            android:id="@+id/age2"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin">
+
+        <TextView
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-10dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="手机号">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/phone2"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin">
+
+        <TextView
+
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-10dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="孕  周"></TextView>
+
+        <TextView
+            android:id="@+id/yunZhou"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"></TextView>
+
+        <TextView
+
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center"
+            android:text="末次月经" />
+
+        <TextView
+            android:id="@+id/lmp"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin">
+
+        <TextView
+
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-10dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="预产期"></TextView>
+
+        <TextView
+            android:id="@+id/edd"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"></TextView>
+
+        <TextView
+
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center"
+            android:text="产检次数" />
+
+        <TextView
+            android:id="@+id/parity"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin">
+
+        <TextView
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-10dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="宫  高"></TextView>
+
+        <TextView
+            android:id="@+id/gongGao"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"></TextView>
+
+        <TextView
+
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center"
+            android:text="腹围" />
+
+        <TextView
+            android:id="@+id/fuWei"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/layout_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.86"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp40"
+            android:text="血压"
+            android:id="@+id/textView2"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/layout_margin">
+
+                <TextView
+                    android:id="@+id/shuosuoya"
+                    style="@style/TextStyle15black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_frame_gray"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="收缩压" />
+
+                <TextView
+                    android:id="@+id/shuosuoyavalue"
+                    style="@style/TextStyle15black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/table_frame_gray"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/layout_margin">
+
+                <TextView
+                    android:id="@+id/shuzhangya"
+                    style="@style/TextStyle15black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_frame_gray"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="舒张压" />
+
+                <TextView
+                    android:id="@+id/shuzhangyavalue"
+                    style="@style/TextStyle15black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/table_frame_gray"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin">
+
+        <TextView
+
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-10dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="体  重"></TextView>
+
+        <TextView
+            android:id="@+id/weight"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="Kg"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin">
+
+        <TextView
+            style="@style/TextStyle15black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-10dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="胎心">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/taiXin"
+            style="@style/TextStyle15grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="次/每分"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

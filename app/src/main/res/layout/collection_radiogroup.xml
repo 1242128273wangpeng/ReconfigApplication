@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--控制fragement的切换-->
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rg_content_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/rb_content_fragment_new"
+        style="@style/tab_style"
+        android:checked="true"
+        android:text="文章" />
+    <View
+        android:layout_width="@dimen/dp1"
+        android:layout_height="@dimen/dp64"
+        android:background="@color/quanziViewBack1"/>
+
+
+    <View
+        android:layout_width="@dimen/dp1"
+        android:layout_height="@dimen/dp64"
+        android:background="@color/quanziViewBack1"/>
+    <RadioButton
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:id="@+id/rb_content_fragment_essence"
+        android:text="帖子"
+        style="@style/tab_style"/>
+</RadioGroup>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/quanziViewBack1" />
+
+    <!--帖子-->
+    <include
+        android:id="@+id/invitation"
+        layout="@layout/community_invitation" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/quanziViewBack1" />
+    <android.dayou.com.baoma.view.myview.NoScolleView
+        android:id="@+id/vp_invitation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_fatie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/dp158"
+        android:layout_marginRight="@dimen/dp24"
+        android:background="@drawable/fatie_ring"
+        android:gravity="center"
+        android:text="发帖"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp34" />
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp91"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/return_out"
+            android:paddingLeft="@dimen/layout_margin2"
+            android:paddingRight="@dimen/layout_margin3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp32"
+            />
+
+        <TextView
+            android:id="@+id/circleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我发表的帖子"
+            android:textColor="@color/real_black"
+            android:textSize="@dimen/dp34"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.dayou.com.baoma.view.myview.NestedScrollingListView
+            android:id="@+id/hot_invitation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btInternet"
+            android:layout_width="100dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/nointernet"
+            android:text="您的网络异常，请检查您的wifi"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

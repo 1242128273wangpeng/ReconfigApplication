@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dp100"
+    android:layout_marginRight="@dimen/dp100"
+    android:layout_marginTop="@dimen/dp100"
+    android:layout_marginBottom="@dimen/dp100"
+    android:background="@drawable/stroke">
+
+    <ImageView
+        android:id="@+id/customserviceicon"
+        android:layout_width="@dimen/dp344"
+        android:layout_height="@dimen/dp302"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp60"
+        android:scaleType="fitXY"
+        android:src="@drawable/defaultcustomer" />
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customserviceicon"
+        android:layout_marginLeft="@dimen/dp120"
+        android:layout_marginTop="@dimen/dp40"
+        android:drawableLeft="@drawable/personicon"
+        android:drawablePadding="@dimen/dp38"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/teltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametext"
+        android:layout_marginLeft="@dimen/dp120"
+        android:layout_marginTop="@dimen/dp24"
+        android:drawableLeft="@drawable/personcall"
+        android:drawablePadding="@dimen/dp38"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/qqtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teltext"
+        android:layout_marginLeft="@dimen/dp120"
+        android:layout_marginTop="@dimen/dp24"
+        android:drawableLeft="@drawable/personqq"
+        android:drawablePadding="@dimen/dp38"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/wchattext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qqtext"
+        android:layout_marginLeft="@dimen/dp120"
+        android:layout_marginTop="@dimen/dp24"
+        android:drawableLeft="@drawable/wchat"
+        android:drawablePadding="@dimen/dp38"
+        android:gravity="center_vertical" />
+</RelativeLayout>

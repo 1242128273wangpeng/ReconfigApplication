@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include
+        android:id="@+id/titlequanzi"
+        layout="@layout/community_head" />
+    <!-- <LinearLayout
+         android:id="@+id/lltiezi"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/titlequanzi"
+         android:orientation="vertical"
+         android:visibility="gone">
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/dp1"
+             android:background="@color/quanziViewBack1" />
+
+         <include
+             android:id="@+id/invitation"
+             layout="@layout/community_invitation" />
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/dp1"
+             android:background="@color/quanziViewBack1" />
+     </LinearLayout>
+
+     <ListView
+         android:scrollbars="none"
+         android:id="@+id/lvCommunity"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/lltiezi"></ListView>
+
+
+     <TextView
+         android:layout_alignParentBottom="true"
+         android:id="@+id/tv_fatie"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="@dimen/dp158"
+         android:layout_marginRight="@dimen/dp24"
+         android:background="@drawable/fatie_ring"
+         android:gravity="center"
+         android:text="发帖"
+         android:textColor="@color/white"
+         android:textSize="@dimen/dp34" />-->
+
+<android.dayou.com.baoma.view.myview.pullrefrashview.SuperSwipeRefreshLayout
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:id="@+id/llScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp290">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/myviewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/dotLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <View
+                            android:id="@+id/v_dot1"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@drawable/ring" />
+
+                        <View
+                            android:id="@+id/v_dot2"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/ring_go" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!--个人简单的描述-->
+                <include layout="@layout/communit_self" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp20"
+                    android:background="@color/quanziViewBack" />
+                <!--我的圈子-->
+                <include layout="@layout/mycircle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/quanziViewBack1" />
+
+            <!--帖子-->
+            <include
+                android:id="@+id/invitation"
+                layout="@layout/community_invitation" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/quanziViewBack1" />
+
+            <!--帖子fragment的pagerqiehuan-->
+            <!-- <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">-->
+        </android.support.design.widget.AppBarLayout>
+
+        <android.dayou.com.baoma.view.myview.NoScolleView
+            android:id="@+id/vp_invitation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <TextView
+            android:id="@+id/tv_fatie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/dp158"
+            android:layout_marginRight="@dimen/dp24"
+            android:background="@drawable/fatie_ring"
+            android:gravity="center"
+            android:text="发帖"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp34" />
+
+        <!-- </FrameLayout>-->
+    </android.support.design.widget.CoordinatorLayout>
+</android.dayou.com.baoma.view.myview.pullrefrashview.SuperSwipeRefreshLayout>
+
+</LinearLayout>

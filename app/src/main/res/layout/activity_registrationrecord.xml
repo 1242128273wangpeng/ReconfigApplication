@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_head_2"/>
+    <FrameLayout
+        android:visibility="invisible"
+        android:id="@+id/nulllayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/nullcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/nullimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height90"
+                android:src="@drawable/nodata" />
+
+            <TextView
+                android:id="@+id/nulltv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nullimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/layout_margin4"
+                android:text="@string/nopresent" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <android.dayou.com.baoma.view.myview.XListView
+        android:id="@+id/list"
+        android:dividerHeight="@dimen/line"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white"
+        />
+</LinearLayout>

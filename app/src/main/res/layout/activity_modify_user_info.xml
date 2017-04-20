@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mitem="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_gray2"
+    tools:context="android.dayou.com.baoma.view.activity.ModifyUserInfoActivity"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/layout_head_2" />
+
+    <LinearLayout
+        android:background="@color/background_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin7"
+            android:background="@color/background_gray2" />
+
+        <RelativeLayout
+            android:id="@+id/headiconitem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/memberheadwh">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/padding25"
+                android:layout_alignParentLeft="true"
+                android:text="头像" />
+
+            <ImageView
+                android:id="@+id/rightimg"
+                android:layout_marginRight="@dimen/layout_margin5"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/right" />
+            <android.dayou.com.baoma.view.myview.MyImageView
+                android:layout_toLeftOf="@id/rightimg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_centerVertical="true"
+                android:src="@drawable/desk_icon" />
+        </RelativeLayout>
+
+        <android.dayou.com.baoma.view.myview.MemberItemView
+            android:id="@+id/nicknameitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            mitem:itemlefttext="@string/nickname"
+            mitem:itemrighttext="小宝妈咪"
+            mitem:itemrightimg="@drawable/right"/>
+        <android.dayou.com.baoma.view.myview.MemberItemView
+            android:id="@+id/usernameitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            mitem:itemlefttext="@string/username"/>
+        <android.dayou.com.baoma.view.myview.MemberItemView
+            android:id="@+id/genderitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            mitem:itemlefttext="@string/gender"/>
+        <android.dayou.com.baoma.view.myview.MemberItemView
+            android:id="@+id/ageitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            mitem:itemlefttext="@string/age"/>
+        <android.dayou.com.baoma.view.myview.MemberItemView
+            android:id="@+id/addressitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            mitem:itemlefttext="@string/address"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin7"
+            android:background="@color/background_gray2" />
+        <android.dayou.com.baoma.view.myview.MemberItemView
+            android:id="@+id/mociyuejinitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            mitem:itemlefttext="@string/mociyuejin"
+            mitem:itemrighttext="2016-08-30"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin7"
+            android:background="@color/background_gray2" />
+        <android.dayou.com.baoma.view.myview.MemberItemView
+            android:id="@+id/bindphoneitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            mitem:itemlefttext="@string/bindphone"
+            mitem:itemrighttext="15270927824"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/part1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp30"
+    android:paddingRight="@dimen/dp30"
+    android:paddingTop="@dimen/dp30">
+
+    <ImageView
+        android:id="@+id/ivHead"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:src="@drawable/yunmaquan" />
+
+    <LinearLayout
+        android:id="@+id/right_of_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvShe"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shezhang"
+                    android:gravity="center"
+                    android:text="社"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dp20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvGuan"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/guanzhang"
+                    android:gravity="center"
+                    android:text="管"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dp20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvNick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我是你大爷爷"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dp32" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNewReplyDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="我是你大爷爷"
+                android:textColor="@color/greytext"
+                android:textSize="@dimen/dp24" />
+
+            <TextView
+                android:id="@+id/tvNewReplyContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part1"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="aaaaaaaaaaa"
+                android:textColor="@color/greytext"
+                android:textSize="@dimen/size_13" />
+
+            <TextView
+                android:id="@+id/tvNewReplyTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNewReplyContent"
+                android:layout_gravity="top"
+                android:layout_marginBottom="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="2017年1月12日  13:10"
+                android:textColor="@color/greytext"
+                android:textSize="@dimen/size_13" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgUrl"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/desk_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:maxWidth="@dimen/dp120"
+            />
+    </LinearLayout>
+</LinearLayout>

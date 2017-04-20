@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--轮播pager-->
+            <android.dayou.com.baoma.view.myview.SelfmotionViewPager
+                android:id="@+id/mSelfmotionView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp290" />
+
+            <LinearLayout
+                android:id="@+id/pointLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp14"
+                android:layout_alignBottom="@id/mSelfmotionView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp14"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+        <!--个人简单的描述-->
+        <include
+            android:id="@+id/information"
+            layout="@layout/communit_self" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp20"
+            android:background="@color/quanziViewBack" />
+        <!--我的圈子-->
+        <include layout="@layout/mycircle" />
+    </LinearLayout>
+</LinearLayout>

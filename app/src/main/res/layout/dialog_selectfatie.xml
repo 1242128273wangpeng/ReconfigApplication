@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+   >
+<LinearLayout
+   android:gravity="center_horizontal"
+    android:layout_marginTop="45dp"
+    android:layout_marginBottom="45dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvSay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:textSize="@dimen/dp40"
+        android:textColor="@color/white"
+        android:background="@drawable/ring_shuoshuo"
+        android:text="说说" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="@dimen/dp40"
+        android:textColor="@color/white"
+        android:background="@drawable/ring_wenzhang"
+        android:id="@+id/tvArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="文章" />
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#e5e5e5"/>
+
+    <ImageView
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginBottom="@dimen/dp30"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:background="@drawable/button_quxiao"
+        android:id="@+id/ivCancel" />
+
+</LinearLayout>

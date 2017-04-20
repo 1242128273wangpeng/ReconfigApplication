@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greybg">
+
+    <android.dayou.com.baoma.view.myview.customview.TitleBar
+        android:id="@+id/feedbacktitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/feedbacktitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <include layout="@layout/linesplite"></include>
+
+                <TextView
+                    android:id="@+id/tip1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp110"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:gravity="center_vertical"
+                    android:text="@string/feedbacktipadvice"
+                    android:textSize="@dimen/dp28" />
+
+                <EditText
+                    android:id="@+id/feedbackedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp500"
+                    android:layout_below="@id/tip1"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_marginRight="@dimen/dp30"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:hint="请输入您的建议"
+                    android:textColorHint="@color/greyfont"
+                    android:background="@drawable/feekbackedit1_bg"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/dp19"
+                    android:paddingRight="@dimen/dp19"
+                    android:paddingTop="@dimen/dp4"
+                    android:textSize="@dimen/dp28" />
+
+                <TextView
+                    android:id="@+id/tip2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp110"
+                    android:layout_below="@id/feedbackedit"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:gravity="center_vertical"
+                    android:text="@string/feedbacktipphone"
+                    android:textSize="@dimen/dp28" />
+
+                <EditText
+                    android:id="@+id/phoneedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp91"
+                    android:layout_below="@id/tip2"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:background="@drawable/feekbackedit1_bg"
+                    android:paddingLeft="@dimen/dp19"
+                    android:paddingRight="@dimen/dp19"
+                    android:textSize="@dimen/dp30" />
+
+                <TextView
+                    android:id="@+id/submittv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp86"
+                    android:layout_below="@id/phoneedit"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:background="@drawable/submit_bg"
+                    android:gravity="center"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp30" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

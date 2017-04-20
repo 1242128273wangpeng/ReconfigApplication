@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mitem="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greybg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/orderinfoitem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp160"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp34"
+            android:paddingRight="@dimen/dp34">
+
+            <RelativeLayout
+                android:id="@+id/centertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/locationicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/nameinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_toRightOf="@+id/locationicon" />
+
+                <TextView
+                    android:id="@+id/phoneinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp10" />
+
+                <android.dayou.com.baoma.view.myview.JustifyTextView
+                    android:id="@+id/addressinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameinfo"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp30"
+                    android:layout_toRightOf="@+id/locationicon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/nulladdresslayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp160"
+                android:background="@color/white"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="请添加收货地址"
+                    android:textColor="@color/pink" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="@dimen/dp20"
+                    android:src="@drawable/right" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/pinksplitline" />
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/greybg">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/dp180"
+                android:layout_height="@dimen/dp180"
+                android:layout_marginBottom="@dimen/dp8"
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp8"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp60">
+
+                <ImageView
+                    android:id="@+id/minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:background="@drawable/minus_plus_bg"
+                    android:src="@drawable/minus" />
+
+                <RelativeLayout
+                    android:id="@+id/userchoosenumitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/minus"
+                    android:background="@color/greybg">
+
+                    <TextView
+                        android:id="@+id/userchoosenum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/minus_plus_bg"
+                        android:gravity="center"
+                        android:textColor="@color/pink"
+                        android:text="1"
+                        android:textSize="@dimen/dp26" />
+
+                    <ImageView
+                        android:id="@+id/plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp6"
+                        android:layout_toRightOf="@+id/userchoosenum"
+                        android:background="@drawable/minus_plus_bg"
+                        android:src="@drawable/plus" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp34"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_toRightOf="@id/img" />
+
+            <TextView
+                android:id="@+id/goodsnumtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp60"
+                android:layout_alignTop="@id/info"
+                android:text="库存量:"
+                android:textColor="@color/greytext"
+                android:textSize="@dimen/dp24"
+                />
+
+            <RelativeLayout
+                android:id="@+id/sccenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/img"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@id/info"
+                android:layout_below="@id/goodsnumtv">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/scoresicon" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:text="积分:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp14"
+                    android:layout_toRightOf="@id/icon"
+                    android:textSize="@dimen/dp24"
+                    android:textColor="@color/pinkbg" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp120"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="@dimen/dp108"
+            android:layout_height="@dimen/padding25"
+            android:layout_below="@id/relative1"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/dp30"
+            android:background="@drawable/pinkbutbg"
+            android:gravity="center"
+            android:text="@string/querenduihuan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp22" />
+    </FrameLayout>
+</LinearLayout>

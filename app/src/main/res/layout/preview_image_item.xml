@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <android.dayou.com.baoma.view.myview.photoview.PhotoView
+        android:id="@+id/iv_show_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp30"
+        android:id="@+id/imgtitletv"
+        android:background="@color/alphamaintop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp91" />
+
+</FrameLayout>

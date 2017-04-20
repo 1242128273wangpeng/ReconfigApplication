@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+                android:id="@+id/rl_leaveword"
+              android:layout_height="match_parent">
+    <include layout="@layout/layout_head_2"
+        android:id="@+id/include_header"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/activity_reply_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.dayou.com.baoma.view.myview.XListView
+            android:id="@+id/lvLeave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="23dp"
+            android:layout_weight="1.0"
+            android:divider="@null"
+            android:scrollbars="none"
+            >
+        </android.dayou.com.baoma.view.myview.XListView>
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottomlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/quanziViewBack"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dp14"
+            android:paddingTop="@dimen/dp14">
+
+            <EditText
+                android:id="@+id/replyet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp24"
+                android:layout_marginRight="@dimen/dp24"
+                android:background="@drawable/anniu_white"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/dp76"
+                android:padding="@dimen/dp6"
+                android:hint="请输入对医生说的话"
+                android:textColorHint="#cccccc"
+                android:textSize="@dimen/dp30" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/quanziViewBack"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp14"
+            android:paddingTop="@dimen/dp14"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/sbumitreplyet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/dp24"
+                android:layout_weight="1"
+                android:background="@drawable/anniu_white"
+                android:minHeight="@dimen/dp76"
+                android:paddingLeft="@dimen/dp6"
+                android:textSize="@dimen/dp30" />
+
+            <TextView
+                android:id="@+id/send"
+                android:layout_width="@dimen/dp110"
+                android:layout_height="@dimen/dp80"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/dp24"
+                android:layout_marginRight="@dimen/dp24"
+                android:background="@drawable/anniu1"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

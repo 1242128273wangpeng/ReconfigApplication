@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_head_2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@drawable/whitebian"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/blacktext2"
+            android:textSize="@dimen/size_15"
+            android:text="全部"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@drawable/whitebian"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/blacktext2"
+            android:textSize="@dimen/size_15"
+            android:text="妇科检查"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@drawable/whitebian"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/blacktext2"
+            android:textSize="@dimen/size_15"
+            android:text="产科检查"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@drawable/whitebian"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/blacktext2"
+            android:textSize="@dimen/size_15"
+            android:text="思维检查"/>
+
+    </LinearLayout>
+    <ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never" />
+</LinearLayout>

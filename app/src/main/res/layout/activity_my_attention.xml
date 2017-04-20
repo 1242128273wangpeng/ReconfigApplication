@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_head_2" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.dayou.com.baoma.view.myview.XListView
+        android:id="@+id/myattentiontiezhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btInternet"
+        android:drawableTop="@drawable/nointernet"
+        android:layout_width="100dp"
+        android:layout_height="81dp"
+        android:background="@android:color/transparent"
+        android:text="您的网络异常，请检查您的wifi"
+        android:layout_gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>

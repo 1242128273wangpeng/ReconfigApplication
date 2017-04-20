@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/benefitview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp191"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginRight="@dimen/dp24"
+        android:background="#ff698a">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp14"
+            android:layout_marginLeft="@dimen/dp38"
+            android:layout_marginTop="@dimen/dp14"
+            android:src="@drawable/jifen" />
+
+        <TextView
+            android:id="@+id/benefitname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp32"
+            android:layout_marginTop="@dimen/dp40"
+            android:layout_toRightOf="@id/icon"
+            android:text="消费累积积分"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp32" />
+
+        <TextView
+            android:paddingRight="@dimen/dp20"
+            android:id="@+id/benefitcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/benefitname"
+            android:layout_marginLeft="@dimen/dp32"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_toRightOf="@id/icon"
+            android:text="越多消费，越多积累"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp26" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/marked"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp191"
+        android:layout_marginRight="@dimen/dp24"
+        android:layout_marginLeft="@dimen/dp24"
+        android:background="#00000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/isfinish" />
+    </RelativeLayout>
+</FrameLayout>

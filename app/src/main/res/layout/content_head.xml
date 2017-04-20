@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp91"
+        android:background="@color/maintop">
+
+        <RelativeLayout
+            android:id="@+id/notifateitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mainmargin"
+            android:background="@drawable/mesg_bg">
+
+            <ImageView
+                android:id="@+id/notifateimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:src="@drawable/mesg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_toRightOf="@id/notifateimg"
+                android:gravity="center_vertical"
+                android:text="消息"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp28"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yunri"
+            android:layout_width="167dp"
+            android:layout_height="@dimen/layout_margin35"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#5dffffff">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/transparent"
+                    android:textSize="@dimen/dp32"
+                    />
+
+                <TextView
+                    android:id="@+id/data2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp32"
+                    />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/goleftimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp40"
+                android:padding="@dimen/dp6"
+                android:src="@drawable/riqikuohao_l"/>
+
+
+            <ImageView
+                android:id="@+id/gorightimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp40"
+                android:padding="@dimen/dp6"
+                android:src="@drawable/riqikuohao_r"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/qiandaoitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mainmargin"
+            android:background="@drawable/sign_bg">
+
+            <ImageView
+                android:id="@+id/signicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:src="@drawable/sign"/>
+
+            <TextView
+                android:id="@+id/qiandaotv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_toRightOf="@id/signicon"
+                android:gravity="center_vertical"
+                android:text="签到"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp28"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

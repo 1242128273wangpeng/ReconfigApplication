@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llitemheader1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivTouxiang1"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:src="@drawable/yunmaquan" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvShe1"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shezhang"
+                    android:gravity="center"
+                    android:text="社"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:id="@+id/tvGuan1"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/guanzhang"
+                    android:gravity="center"
+                    android:text="管"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:id="@+id/tvNick1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我是你大爷爷"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dp32" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvYudate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="我是你大爷爷"
+                android:textSize="@dimen/dp24" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp24">
+
+            <TextView
+                android:id="@+id/tvTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:text="2016年12月30  3:36"
+                android:textSize="@dimen/dp20" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:padding="4dp"
+        android:background="#f2f2f2f2"
+        android:layout_marginBottom="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="@dimen/dp24"
+        android:id="@+id/tvContent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="该内容已严重违反《论坛规则》，予以查封"
+        android:textSize="@dimen/dp24" />
+</LinearLayout>

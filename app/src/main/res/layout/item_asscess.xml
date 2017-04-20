@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:rate="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_head_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/zhucolor"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/size_13"
+        android:paddingRight="@dimen/size_13"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/ZhuTextwhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="妇科检查"/>
+
+        <TextView
+            style="@style/ZhuTextwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="right"
+            android:text="2016/10/18"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@color/background_white"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp32"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="医&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;生"
+                android:textColor="@color/yunshi"
+                android:textSize="@dimen/dp28"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:gravity="center">
+
+                <android.dayou.com.baoma.view.myview.RatingBar2
+                    android:id="@+id/ratingbarId1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    rate:starCount="5"
+                    rate:starEmpty="@drawable/icon_star_unselect"
+                    rate:starFill="@drawable/icon_star_select"
+                    rate:starImageSize="18dp"
+                    rate:starPadding="10dp"
+                    rate:starStep="1.0"
+                    rate:stepSize="Full">
+                </android.dayou.com.baoma.view.myview.RatingBar2>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/evaluate1"
+                style="@style/font_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="非常好"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp26"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="客&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;服"
+                android:textColor="@color/yunshi"
+                android:textSize="@dimen/dp28"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:gravity="center">
+
+                <android.dayou.com.baoma.view.myview.RatingBar2
+                    android:id="@+id/ratingbarId2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    rate:starCount="5"
+                    rate:starEmpty="@drawable/icon_star_unselect"
+                    rate:starFill="@drawable/icon_star_select"
+                    rate:starImageSize="18dp"
+                    rate:starPadding="10dp"
+                    rate:starStep="1.0"
+                    rate:stepSize="Full">
+                </android.dayou.com.baoma.view.myview.RatingBar2>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/evaluate2"
+                style="@style/font_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="非常好"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp26"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="环境设备"
+                android:textColor="@color/yunshi"
+                android:textSize="@dimen/dp28"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:gravity="center">
+
+                <android.dayou.com.baoma.view.myview.RatingBar2
+                    android:id="@+id/ratingbarId3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    rate:starCount="5"
+                    rate:starEmpty="@drawable/icon_star_unselect"
+                    rate:starFill="@drawable/icon_star_select"
+                    rate:starImageSize="18dp"
+                    rate:starPadding="10dp"
+                    rate:starStep="1.0"
+                    rate:stepSize="Full">
+                </android.dayou.com.baoma.view.myview.RatingBar2>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/evaluate3"
+                style="@style/font_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="非常好"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/evaluate_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp302"
+            android:layout_marginTop="@dimen/dp32"
+            android:background="@drawable/whitebian"
+            android:gravity="top"
+            android:hint="请填写您的评价"
+            android:paddingLeft="@dimen/dp24"
+            android:paddingRight="@dimen/dp24"
+            android:textSize="@dimen/dp28"
+            android:paddingTop="@dimen/dp24"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>

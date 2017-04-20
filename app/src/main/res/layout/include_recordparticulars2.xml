@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/record2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15black"
+            android:layout_marginRight="-10dp"
+            android:text="既往史"
+            android:gravity="left"
+            android:paddingLeft="@dimen/padding5">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15grey"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15black"
+            android:layout_marginRight="-10dp"
+            android:text="家族史"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/familyhistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15grey"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin"
+
+        android:paddingRight="@dimen/layout_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15black"
+            android:layout_marginRight="-10dp"
+            android:text="个人史"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+        </TextView>
+
+        <TextView
+            android:id="@+id/persohistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15grey"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fukes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15black"
+            android:layout_marginRight="-10dp"
+            android:text="妇科手术史"
+            android:gravity="left"
+            android:paddingLeft="@dimen/padding5">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/surgery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15grey"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15black"
+            android:layout_marginRight="-10dp"
+            android:text="孕产史"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/maternal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15grey"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+        </TextView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

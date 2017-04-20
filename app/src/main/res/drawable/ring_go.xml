@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+    <!--圆形不渐变-->
+    <solid android:color="@color/ring_go" />
+    <!--大小-->
+    <size android:width="@dimen/dp14"
+        android:height="@dimen/dp14" />
+</shape>

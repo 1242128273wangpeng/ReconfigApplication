@@ -1,0 +1,294 @@
+<resources>
+    <string name="tian">天</string>
+    <string name="cmm">cm</string>
+    <string name="g">g</string>
+    <string name="periods">距离预产期</string>
+    <string name="babylength">宝宝头臀长</string>
+    <string name="babyweight">宝宝体重</string>
+    <string name="noticetip">注意事项:</string>
+    <string name="recomand">孕妈推荐</string>
+    <string name="morestr">更多</string>
+    <string name="siweiyy">四维预约</string>
+    <string name="kefuzx">客服咨询</string>
+    <string name="chanjianyy">产检预约</string>
+    <string name="fukeyy">妇科预约</string>
+    <string name="fukedd">妇科档案</string>
+    <string name="nowregister">立即注册</string>
+    <string name="maketip">请务必填写真实信息，您的信息我们将严格保密</string>
+    <string name="chankedd">产科档案</string>
+    <string name="importappointment_timetip">(最少提前一天预约哦)</string>
+    <string name="noticetitle">"消息提醒"</string>
+    <string name="noticecontent">"消息内容"</string>
+    <string name="feedbacktipadvice">在下列框中输入您的建议</string>
+    <string name="feedbacktipphone">请留您的手机号，以便我们联系您</string>
+    <string name="submit">提  交</string>
+    <string name="customerservicelist">"客服列表"</string>
+    <string-array name="maingrid1">
+        <item>四维预约</item>
+        <item>产检预约</item>
+        <item>妇科预约</item>
+        <item>客服预约</item>
+    </string-array>
+    <string-array name="maingrid2">
+        <item>医院导航</item>
+        <item>档案信息</item>
+        <item>服务评价</item>
+        <item>预约记录</item>
+        <item>产检列表</item>
+        <item>专家列表</item>
+    </string-array>
+    <string-array name="benefitstrs">
+        <item>消费累计积分</item>
+        <item>免费健康咨询</item>
+        <item>专家点名亲诊</item>
+        <item>专家点名手术</item>
+        <item>会员终身有效</item>
+        <item>会员健康福利</item>
+        <item>节日福利</item>
+        <item>VIP接送车</item>
+    </string-array>
+    <string-array name="endstrs0">
+        <item>1, 保持良好心情</item>
+        <item>2, 谨慎用药（尤其激素类药物）</item>
+        <item>3, 营养丰富全面，保证每天饮食结构合理</item>
+    </string-array>
+    <string-array name="endstrs">
+        <item>1, 练习哺乳动作</item>
+        <item>2, 准备迎接宝宝</item>
+        <item>3, 第十三次产检</item>
+    </string-array>
+    <string-array name="endstrs2">
+        <item>1, 喝杯牛奶</item>
+        <item>2, 热爱生活</item>
+        <item>3, 享受亲子生活</item>
+    </string-array>
+    <string-array name="benefitcontents">
+        <item>越多消费，越多积累</item>
+        <item>长期免费的健康咨询热线服务</item>
+        <item>权威专家点名亲诊服务</item>
+        <item>上海，南京，常州权威妇产科，专家点名服务</item>
+        <item>凭身份证，手机号终身享受</item>
+        <item>每年免费享受卵巢保养，汗蒸疗理一次</item>
+        <item>每年免费享受全身健康体检</item>
+        <item>节日，生日亲情问候及礼物</item>
+        <item>尊享VIP接送服务（市区3公里接送）</item>
+    </string-array>
+    <string name="app_name">红房子孕妈</string>
+    <string name="double_back_exit_toast">再按一次退出应用</string>
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开刷新数据</string>
+    <string name="header_hint_refresh_loading">正在加载&#8230;</string>
+    <string name="header_hint_refresh_time">上次更新时间：</string>
+    <string name="footer_hint_load_ready">松开载入更多</string>
+    <string name="footer_hint_refresh_normal">上拉加载</string>
+    <string name="bbtext">现在你正在排卵期，基础体温有变化吗？如果受精卵已经形成，虽然你不会有什么感觉，但是，你已经迈出女人一生中最重要的一步，开始成为完美与成熟的女性。想想吧，一个天使一般可爱的孩子，他全心依赖你，叫你“妈妈”。这怎能不令人心神向往。让我们期待吧！</string>
+    <!--首页-->
+    <string name="action_settings">Settings</string>
+    <string name="day">天</string>
+
+    <!--用户界面-->
+
+    <!--一键挂号-->
+    <string name="name">姓名</string>
+    <string name="checktype">项目</string>
+    <string name="qq">Q&#160;Q</string>
+    <string name="consulting_details">挂号说明</string>
+    <string name="tel">电话</string>
+    <string name="appointment_time">预约时间</string>
+    <string name="importname">请输入姓名</string>
+    <string name="import_qq">请输入QQ</string>
+    <string name="import_obstetrics">请选择科室</string>
+    <string name="importconsulting_details">请详细说明身体状况</string>
+    <string name="importtel">请输入电话</string>
+    <string name="importappointment_time">请选择预约时间</string>
+    <string name="submit_order">确认</string>
+
+    <!--孕期管理-->
+    <string name="distance_expectedconfinement">距离预产期</string>
+    <string name="baby_height">宝宝头臂长</string>
+    <string name="baby_weight">宝宝体重</string>
+    <string name="consult">咨询</string>
+
+    <!--体重-->
+    <string name="weigh_remarktext">请务必填写真实信息，您的信息我们将严格保密。</string>
+    <string name="setweigh">输入身高</string>
+    <string name="progestation_weight">孕前体重</string>
+    <string name="today">今日体重</string>
+    <string name="weight_fingerpost">体重指南</string>
+    <string name="order">提交</string>
+    <string name="weightguide">体重指数BMI\n BMI小于18.5，孕前体型偏瘦\n 18.5≤BMI≤23.9\n BMI大于23.9，孕前体型偏胖</string>
+
+    <!--医院-->
+    <string name="hospital_type">医院类型：妇产科  (医保农保定点单位)</string>
+    <string name="hospital_address">常州市武进区湖塘镇常武北路2号(兰新大厦北侧)</string>
+    <string name="tell">0519-86579999</string>
+    <string name="hospital_abstract">医院简介</string>
+    <string name="particulars">详情</string>
+    <string name="chinesename">中文昵称：</string>
+    <string name="chinesename_text">常州红房子妇产医院</string>
+    <string name="geographic_position">地理位置：</string>
+    <string name="geographic_position_text">常州市武进区湖塘镇常武北路2号(兰新大厦北侧)</string>
+    <string name="opening_time">开放时间：</string>
+    <string name="opening_time_text">8：00-20：00 (节假日无休)</string>
+    <string name="hospital_category">医院类型：</string>
+    <string name="hospital_category_text">妇产科</string>
+    <string name="hospital_level">医院资质：</string>
+    <string name="hospital_level_text">国家二级妇产专科医院</string>
+    <string name="hospital_range">社保范围：</string>
+    <string name="hospital_range_text">城镇职工医疗保险/居民医疗保险/生育保险</string>
+    <string name="district">所属地区：</string>
+    <string name="district_text">常州市武进区</string>
+
+    <string name="hospital_abstract_content">常州红房子妇产医院，位于常州武进购物中心商圈，是常州首家经过卫计委审核通过的国家二级妇产专科医院。城镇职工医疗保险、居民医疗保险、生育保险定点医母婴保健技术服务单位，荣获常州市爱婴医院资质。医院重视妇产科专家的人才引进，先后与上海复旦大学妇产科研究所、上海红房子医院、上海市国际妇科内窥镜培训中心、南京妇幼保健院、常州妇幼保健院等著名机构和三甲医院的专家学者建立合作，为常州乃至整个苏南地区的患者提供来自上海、南京等地著名专家的会诊服务。医院拥有正、副高职称在职注册医师20位，已满足日常门诊患者的需要。医院设有产科、妇科、计划生育科、不孕不育科、儿科、体检中心等多个临床科室。常州红房子妇产医院本着“以人为本、求专求强、品牌制胜、永续经营”的方针始终把追求高品质服务与人性化医疗作为发展的主题，以精湛的医术、满意的疗效、温馨的环境、贴心的服务、合理的价格，全面提升妇女儿童的医疗品质，重点打造成为“全心全意呵护妇女儿童健康”的专业妇产医院。
+   </string>
+    <string name="tese">
+        <item>[产科]顺产/剖宫产/无痛分娩/导乐分娩/孕妇大学\n</item>
+        <item>[妇科]妇科炎症/妇科肿瘤/内分泌疾病/生殖整形\n</item>
+        <item>[儿科]新生儿科/儿科/婴儿游泳馆\n</item>
+        <item>[计划生育]婚检/孕检/无痛人流/节育避孕\n</item>
+        <item>[不孕不育诊疗中心]女性不孕症/男性不育症\n</item>
+        <item>[宫颈疾病诊疗中心]宫颈炎症/良性肿瘤/恶性肿瘤/癌前病变/宫颈赘生物\n</item>
+        <item>[微创手术中心]宫腔镜手术/腹腔镜手术/输软管镜/cook导丝\n</item>
+        <item>[男科门诊]生殖整形/性功能障碍/泌尿感染/前列腺疾病\n</item>
+        <item>[女性维养中心]卵巢保养/瑶浴/通乳开奶\n</item>
+        <item>[体检中心]入职体检/员工体检/女性体检\n</item>
+    </string>
+
+    <!--登录-->
+    <string name="settell">请输入手机号</string>
+    <string name="setpassword">密码</string>
+    <string name="register">注  册</string>
+    <string name="login">登  录</string>
+    <string name="forget_the_password">忘记密码?</string>
+    <string name="testgetcode">获取验证码</string>
+    <string name="input_verification">请输入验证码</string>
+    <string name="reset_password">请输入密码</string>
+    <string name="confirm_password">请确认密码</string>
+
+    <!--个人信息-->
+    <string name="myhead">头像</string>
+    <string name="myname">名字</string>
+    <string name="mynickname">昵称</string>
+    <string name="bindingtell">绑定手机号</string>
+
+
+    <!--设置-->
+    <string name="current_version">修改密码</string>
+    <string name="bouta_us">关于app</string>
+    <string name="out">退出登录</string>
+    <string name="see_post">不让他(她)看我回复的帖子</string>
+    <string name="check_version">检查版本</string>
+    <string name="post_statement">发帖声明</string>
+    <string name="integral_rule">积分规则</string>
+
+    <!--预产期-->
+    <string name="yucanqibeizhu">请填写以下内容，我们将为您预测孕产期（结果仅供参考，实际以产检结果为准）</string>
+    <string name="last_menstrual_period">末次月经</string>
+    <string name="periodsum">经期天数</string>
+    <string name="period">经期周期</string>
+
+    <!--体重-->
+    <string name="yqbztz">孕前标准体重：</string>
+    <string name="yqbps">孕前肥胖度：</string>
+    <string name="bmi">BMI值：</string>
+    <string name="aclx">安产理想体重：</string>
+    <!--<string name="dqtz">孕前标准体重</string>-->
+    <!--关于我们-->
+    <string name="aboutus_beizhu">  红房子孕妈APP以妇产便捷预约、孕妈个人管理为主要特色功能，为孕妈提供孕期服务，帮助每一位孕妈生下健康、聪明的宝宝的医疗服务类产品。</string>
+    <string name="aboutus_dayou">大友投资</string>
+    <string name="aboutus_dayou2">Copyright © 2014-2018 All Rights Reserved</string>
+
+
+    <!--会员等级-->
+
+
+    <!--微信-->
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+
+
+    <!-- 会员管理 -->
+    <string name="tuijianhy">推荐好友消费可获得积分</string>
+    <!-- 会员积分兑换好礼 -->
+    <string name="querenduihuan">确认兑换</string>
+    <string name="jifendhtitle">商城</string>
+    <string name="duihaun">兑换</string>
+    <!--确认订单-->
+    <string name="confirmorder">确认订单</string>
+    <string name="byhospital">本人亲自去医院取件</string>
+    <string name="bylogistics">使用物流邮寄到家</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- 我的Fragment -->
+    <string name="mociyuejin">末次月经</string>
+    <string name="myorder">我的订单</string>
+    <string name="modifyuserinfo">修改资料</string>
+    <!--Fragment的修改资料-->
+    <string name="nickname">用户名</string>
+    <string name="username">姓名</string>
+    <string name="gender">性别</string>
+    <string name="age">年龄</string>
+    <string name="address">地址</string>
+    <string name="bindphone">绑定手机</string>
+
+    <!--地址新增-->
+    <string name="chooseaddress">选择收货地址</string>
+    <string name="addaddress">新增</string>
+    <string name="add">新增</string>
+    <!--编辑地址-->
+    <string name="setdefault">设置为默认地址</string>
+    <string name="editaddress">编辑地址</string>
+    <string name="receiver">收货人:</string>
+    <string name="phone">联系电话:</string>
+    <string name="area">所在地区:</string>
+    <string name="detailaddress">详细地址:</string>
+    <string name="savesuccess">保存成功</string>
+    <string name="updatesuccess">更新成功</string>
+    <!--我的订单-->
+
+    <string name="confirmreceiver">确认收货</string>
+    <string name="waitdeliver">待收货</string>
+    <string name="hasdeliver">已收货</string>
+    <string name="addhistoryuser">添加历史预约人</string>
+    <string name="addhistoryuserinfo">直接添加历史预约人或者帮助朋友挂号</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开刷新数据</string>
+    <string name="pull_to_refresh_refreshing_label">正在加载\u2026</string>
+
+    <string name="pull_to_refresh_footer_release_label">松开刷新数据</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载\u2026</string>
+
+    <string name="nopresent">当前没有可兑换的商品</string>
+    <string name="nowaitgoods">当前没有待收货</string>
+    <string name="nohasgoods">您还没有兑换的商品</string>
+
+    <string name="predicted">预产期"</string>
+    <string name="pleasefill">请先填写收货地址</string>
+
+    <string name="local_image_selector">本地图片选择器</string>
+    <string name="load_net_image">网络图片加载</string>
+    <string name="all_image">全部图片</string>
+    <string name="selected_image">选中的图片</string>
+    <string name="selected_ok">确定 (%1$s/%2$s)</string>
+    <string name="selected">选中</string>
+    <string name="image_index">%1$s/%2$s</string>
+    <string name="grant_permission_success">授权成功，正在读取相册</string>
+    <string name="grant_permission_failure">授权失败，无法读取相册</string>
+    <string name="grant_advice_read_album">建议授予获取相册的权限</string>
+    <string name="help">系统权限</string>
+    <string name="help_content">缺少读取系统相册的权限，请点击 "设置" - "权限" 授予应用权限</string>
+    <string name="quit">退出</string>
+    <string name="settings">设置</string>
+    <string name="no_image">没有相册图片</string>
+    <string name="take_photo_from_camera">调用系统相机拍照</string>
+
+
+    <string name="seconds_messages">%1$ds</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

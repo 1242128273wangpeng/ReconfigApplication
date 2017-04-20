@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/greybg"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_head_3"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/layout_margin2"
+        android:background="@color/background_white"
+        android:gravity="left|center"
+        android:paddingBottom="@dimen/layout_margin4"
+        android:paddingLeft="@dimen/layout_margin2"
+        android:paddingTop="@dimen/layout_margin4"
+        android:textColorHint="@color/greyfont2"/>
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/layout_margin2"
+        android:background="@color/background_white"
+        android:gravity="left|center"
+        android:hint="请输入年龄"
+        android:numeric="integer"
+        android:paddingBottom="@dimen/layout_margin4"
+        android:paddingLeft="@dimen/layout_margin2"
+        android:paddingTop="@dimen/layout_margin4"
+        android:singleLine="true"
+        android:visibility="gone"/>
+</LinearLayout>

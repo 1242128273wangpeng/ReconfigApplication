@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_head_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-10dp"
+                    android:background="@drawable/huo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:background="@color/background_white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_margin">
+
+                    <ImageView
+                        android:id="@+id/headUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp258"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/layout_margin"
+                        android:paddingRight="@dimen/layout_margin"
+                        android:paddingTop="@dimen/layout_margin2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size24" />
+
+                    <TextView
+                        android:id="@+id/createTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/layout_margin"
+                        android:paddingTop="@dimen/layout_margin2"
+                        android:text="发布时间:"
+                        android:textColor="@color/bg_grey2"
+                        android:textSize="@dimen/size_15"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/layout_margin"
+                        android:text="来源：常州红房子妇产医院"
+                        android:textColor="@color/bg_grey2"
+                        android:textSize="@dimen/size_15" />
+
+                    <android.dayou.com.baoma.view.myview.JustifyTextView
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:ellipsize="end"
+                        android:textColor="@color/bg_grey2"
+                        android:textSize="@dimen/size_15"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_margin"
+                        android:layout_marginTop="@dimen/layout_margin"
+                        android:background="@drawable/huodongxian" />
+
+                    <TextView
+                        android:id="@+id/appendOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_15"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/contentOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_margin"
+                        android:layout_marginLeft="@dimen/layout_margin"
+                        android:layout_marginRight="@dimen/layout_margin"
+                        android:textColor="@color/bg_grey2"
+                        android:textSize="@dimen/text_15"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/appendTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_15"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/contentTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_margin"
+                        android:layout_marginLeft="@dimen/layout_margin"
+                        android:layout_marginRight="@dimen/layout_margin"
+                        android:textColor="@color/bg_grey2"
+                        android:textSize="@dimen/text_15"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/appendThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_15"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/contentThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_margin3"
+                        android:layout_marginLeft="@dimen/layout_margin"
+                        android:layout_marginRight="@dimen/layout_margin"
+                        android:textColor="@color/bg_grey2"
+                        android:textSize="@dimen/text_15"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/desk_icon"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

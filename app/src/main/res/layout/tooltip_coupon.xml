@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+    <!-- android:background="@drawable/manycouponbg"-->
+
+    <LinearLayout
+        android:id="@+id/maindialog_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/maincoupon_radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp38"
+            android:layout_marginTop="@dimen/dp40"
+            android:gravity="center"
+            android:text="优惠券已到账"
+            android:textColor="@color/white"
+            android:textSize="21dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp44"
+            android:layout_marginRight="@dimen/dp44"
+            android:background="@drawable/manycouponbg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/yhj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#333333"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/couponinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/yhj"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/jine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#333333"
+                    android:textSize="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/jine"
+                    android:layout_toLeftOf="@+id/jine"
+                    android:text="￥"
+                    android:textColor="#333333"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp10"
+                android:text="请在红房子医院线下使用"
+                android:textColor="@color/yunshi"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp38"
+            android:layout_marginTop="@dimen/dp40"
+            android:gravity="center"
+            android:text="优惠券请到我的优惠券中查看"
+            android:textColor="@color/black2"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/onecouponIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maindialog_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp60"
+        android:src="@drawable/closecoupon"
+        />
+
+
+</RelativeLayout>

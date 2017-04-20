@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <android.dayou.com.baoma.view.myview.pullrefrashview.SuperSwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/self"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <!--  <TextView
+                          android:paddingLeft="@dimen/dp5"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="right|center"
+                          android:background="@drawable/guanzhu"
+                          android:drawableLeft="@drawable/guanzhuanniu"
+                          android:gravity="right|center"
+                          android:paddingRight="@dimen/dp24"
+                          android:text="关注"
+                          android:textColor="#ff698a"
+                          android:textSize="@dimen/dp24" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp90"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivuserimageView"
+                                    android:layout_width="@dimen/dp130"
+                                    android:layout_height="@dimen/dp130"
+                                    android:layout_gravity="center_horizontal"
+                                    android:padding="2dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/headdefault"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/ivuserimageViewyinying"
+                                    android:layout_width="@dimen/dp130"
+                                    android:layout_height="@dimen/dp130"
+                                    android:layout_gravity="center_horizontal"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/touxiangtoumingquan"
+                                    />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tvname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ivuserimageView"
+                                android:layout_marginTop="@dimen/dp30"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="宝宝妈咪"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/dp32"/>
+
+                            <TextView
+                                android:id="@+id/tvtimename"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvname"
+                                android:layout_marginTop="@dimen/dp20"
+                                android:text="孕5周8天"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/dp24"/>
+
+                            <TextView
+                                android:id="@+id/gold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvtimename"
+                                android:layout_marginTop="@dimen/dp20"
+                                android:background="@drawable/jinbibei"
+                                android:drawableLeft="@drawable/jinbitubiao"
+                                android:drawablePadding="@dimen/padding5"
+                                android:gravity="center_horizontal"
+                                android:paddingLeft="@dimen/dp8"
+                                android:paddingRight="@dimen/dp8"
+                                android:text="10000"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/dp20"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp30"
+                            android:layout_marginTop="@dimen/dp30"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/llFans"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvfenshu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="100"
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/dp36"/>
+
+                                <TextView
+                                    android:id="@+id/tvfen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp10"
+                                    android:layout_weight="1"
+                                    android:text="粉丝"
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/dp24"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/dp1"
+                                android:layout_height="46dp"
+                                android:background="#ffffff"
+                                android:paddingTop="3dp"/>
+
+                            <LinearLayout
+                                android:id="@+id/llAttention"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvguanshu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="100"
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/dp36"/>
+
+                                <TextView
+                                    android:id="@+id/tvguan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp10"
+                                    android:layout_weight="1"
+                                    android:text="关注"
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/dp24"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rvself"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#3ed7df"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivReturnOut1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/return_out"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="个人中心"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/dp34"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#cccccc"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_gravity="bottom"
+                        android:background="#ffffff"
+                        android:fillViewport="false"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                        app:tabIndicatorColor="#3ed7df"
+                        app:tabIndicatorHeight="2.0dp"
+                        app:tabSelectedTextColor="#3ed7df"
+                        app:tabTextColor="#a7a7a7a7">
+                        <!-- <android.support.design.widget.TabItem
+                             android:id="@+id/replycountTab"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:text="发表的帖子(1000)" />
+
+                         <android.support.design.widget.TabItem
+                             android:id="@+id/postingcountTab"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:text="回复的帖子(1000)"
+                             />-->
+                    </android.support.design.widget.TabLayout>
+
+                    <ImageView
+                        android:id="@+id/ivhodiantishi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/dp1"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:src="@drawable/hongdiantishi"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <ImageView
+                android:id="@+id/ivReturnOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:padding="@dimen/dp20"
+                android:src="@drawable/return_out"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/selfViewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                />
+        </android.support.design.widget.CoordinatorLayout>
+    </android.dayou.com.baoma.view.myview.pullrefrashview.SuperSwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="android.dayou.com.baoma.view.fragment.CouponFragment">
+    <android.dayou.com.baoma.view.myview.XListView
+        android:id="@+id/couponLv"
+        android:layout_width="match_parent"
+       android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_height="match_parent"
+       android:divider="@null"
+        android:dividerHeight="15dp"
+        tools:listitem="@layout/item_coupon"
+        android:layout_marginTop="-1dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

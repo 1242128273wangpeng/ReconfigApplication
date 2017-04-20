@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin5"
+        android:paddingRight="@dimen/layout_margin5">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height2"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height2"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin5"
+        android:paddingRight="@dimen/layout_margin5">
+
+        <TextView
+            android:id="@+id/hospital_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height2"
+            android:textSize="@dimen/dp24"
+            android:textColor="@color/greyfont7"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/department_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height2"
+            android:textSize="@dimen/dp24"
+            android:textColor="@color/greyfont7"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <include layout="@layout/splitline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin5"
+        android:paddingRight="@dimen/layout_margin5">
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height2"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height2"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+</LinearLayout>

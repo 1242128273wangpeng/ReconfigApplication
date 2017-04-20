@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginLeft="18dp"
+              android:layout_marginRight="18dp"
+              android:layout_marginTop="70dp"
+              android:background="@drawable/bg_card"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@drawable/bg_service_card1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/portrait"
+                android:layout_width="106dp"
+                android:layout_height="106dp"
+                android:layout_marginTop="6.2dp"
+                android:layout_marginLeft="6.3dp"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/headdefault"/>
+
+            <ImageView
+                android:id="@+id/portrait1"
+                android:layout_width="119dp"
+                android:layout_height="119dp"
+                android:background="@drawable/roundcircle"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/portrait"
+            android:layout_marginTop="23dp"
+            android:text="有爱的梦"
+            android:textColor="#ffffff"
+            android:textSize="25dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvServiceName"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/servicephonerow"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_service"
+            android:gravity="center_vertical|center_horizontal">
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/tlPhone"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvphone1"
+                        android:padding="5dp"
+                        android:textSize="13dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电话："
+                        android:paddingTop="5dp"/>
+                    <TextView
+                        android:id="@+id/tvChat1"
+                        android:padding="5dp"
+                        android:textSize="13dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信："/>
+
+                    <TextView
+                        android:id="@+id/tvQQ1"
+                        android:padding="5dp"
+                        android:textSize="13dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QQ："
+                        android:paddingBottom="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/tlPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:paddingTop="5dp"
+                        android:id="@+id/tvPhone"
+                        android:textSize="13dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13266666622"/>
+
+
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/tvChat"
+                        android:textSize="13dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13266666623"/>
+
+
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/tvQQ"
+                        android:textSize="13dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6793281"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <LinearLayout
+        android:id="@+id/llPhone"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/ivServicePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/servicephone"/>
+    </LinearLayout>
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/viewService"
+        android:layout_width="0.5dp"
+        android:layout_height="30dp"
+        android:background="#e5e5e5"
+        />
+    <LinearLayout
+        android:id="@+id/llChar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/ivServiceChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/servicechat"/>
+    </LinearLayout>
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/viewService1"
+        android:layout_width="0.5dp"
+        android:layout_height="30dp"
+        android:background="#e5e5e5"
+        />
+    <LinearLayout
+        android:id="@+id/llQQ"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/serviceqq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/serviceqq"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

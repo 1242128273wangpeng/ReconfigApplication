@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/publishroot"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/publishscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/greybg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <android.dayou.com.baoma.view.myview.customview.TitleBar
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"/>
+
+            <include layout="@layout/linesplite"/>
+
+            <RelativeLayout
+                android:id="@+id/publisharticleeditarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/articletitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="标题"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/dp24"
+                    android:paddingRight="@dimen/dp24"
+                    android:paddingTop="15dp"
+                    android:textSize="@dimen/dp26"/>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_below="@id/articletitle"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:background="@color/linecolor"/>
+
+                <android.dayou.com.baoma.view.myview.publisheditor.RichTextEditorCommon
+                    android:id="@+id/articlecontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/text_grey3"
+                    android:textSize="@dimen/dp26"
+                    />
+
+                <TextView
+                    android:id="@+id/belowTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp500"
+                    android:layout_below="@id/articlecontent"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/publishmoodeditarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/moodcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp436"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint="想说什么就说什么..."
+                    android:paddingBottom="@dimen/dp24"
+                    android:paddingLeft="@dimen/dp24"
+                    android:paddingRight="@dimen/dp24"
+                    android:paddingTop="@dimen/dp30"
+                    android:textSize="@dimen/dp28"/>
+
+                <GridView
+                    android:id="@+id/insertmoodpic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/moodcontent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dp24"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:numColumns="4"
+                    android:textSize="14dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greybg"
+                android:paddingTop="@dimen/dp20">
+
+                <RelativeLayout
+                    android:id="@+id/layoutquanzi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/dp12"
+                    android:paddingTop="@dimen/dp12">
+
+                    <TextView
+                        android:id="@+id/tipchoose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp24"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/dp24"/>
+
+
+                    <ImageView
+                        android:id="@+id/spimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp24"
+                        android:paddingLeft="@dimen/dp8"
+                        android:src="@drawable/openlv"/>
+
+                    <TextView
+                        android:id="@+id/choosesp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp8"
+                        android:layout_toLeftOf="@id/spimg"
+                        android:background="@drawable/spinnertvbg"
+                        android:paddingBottom="@dimen/dp4"
+                        android:paddingLeft="@dimen/dp6"
+                        android:paddingRight="@dimen/dp6"
+                        android:paddingTop="@dimen/dp4"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp22"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+
+                <android.dayou.com.baoma.view.myview.customview.CoatScrollViewListView
+                    android:id="@+id/chooselv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutquanzi"
+                    android:layout_marginBottom="@dimen/dp40"
+                    android:background="@color/white"
+                    android:divider="@null"
+                    android:scrollbars="none"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/picbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp91"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/linecolor"/>
+
+        <ImageView
+            android:id="@+id/cameraimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp24"
+            android:padding="@dimen/dp4"
+            android:src="@drawable/camera"/>
+
+        <ImageView
+            android:id="@+id/moodimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp80"
+            android:layout_toRightOf="@+id/cameraimg"
+            android:clickable="true"
+            android:padding="@dimen/dp4"
+            android:src="@drawable/mood"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_emoji"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="bottom"
+        android:background="@color/greybg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp91"
+            android:layout_gravity="top"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/linecolor"/>
+
+            <ImageView
+                android:id="@+id/keyboradimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp24"
+                android:padding="@dimen/dp4"
+                android:src="@drawable/keyborad"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/linecolor"/>
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/emoji_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/emoji_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_margin">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/pname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="精品卡通保温杯"
+            android:textColor="@color/background_gray5"
+            android:textSize="@dimen/text_15" />
+
+        <ImageView
+            android:id="@+id/canceldialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding5"
+            android:layout_marginRight="@dimen/divier2"
+            android:src="@drawable/canceldialog" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <TextView
+        android:id="@+id/pscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/layout_margin"
+        android:text="3000积分"
+        android:textColor="@color/pinkbg"
+        android:textSize="@dimen/text_15" />
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_margin5">
+
+        <TextView
+            android:id="@+id/byhosptiltv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding5"
+            android:drawableLeft="@drawable/choose_check"
+            android:drawablePadding="@dimen/padding5"
+            android:padding="@dimen/padding5"
+            android:text="@string/byhospital"
+            android:textColor="@color/background_gray5"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:id="@+id/bylogisticstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding5"
+            android:layout_marginTop="@dimen/divier2"
+            android:drawableLeft="@drawable/choose_default"
+            android:drawablePadding="@dimen/padding5"
+            android:padding="@dimen/padding5"
+            android:text="@string/bylogistics"
+            android:textColor="@color/background_gray5"
+            android:textSize="@dimen/text_15" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/surebut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/maintop"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/background_white"
+        android:textSize="@dimen/text_15" />
+</LinearLayout>

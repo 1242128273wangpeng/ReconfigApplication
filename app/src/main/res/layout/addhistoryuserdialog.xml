@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/addhistoryuser"
+            android:textColor="@color/background_gray5"
+            android:textSize="@dimen/text_15" />
+
+        <ImageView
+            android:id="@+id/canceldialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding5"
+            android:paddingRight="@dimen/layout_margin2"
+            android:src="@drawable/canceldialog" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <ListView
+        android:id="@+id/adduserlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/surebut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pinkbg"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/background_white"
+        android:textSize="@dimen/text_15" />
+</LinearLayout>

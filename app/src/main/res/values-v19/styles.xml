@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Base application theme for API 19+.
+  -->
+    <style name="AppTheme.NoActionBar4">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimaryDark">@color/maintop</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

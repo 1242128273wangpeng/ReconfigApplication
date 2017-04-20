@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp91"
+        android:background="@color/maintop">
+
+        <TextView
+            android:id="@+id/returnOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mainmargin"
+            android:drawableLeft="@drawable/return_out"
+            android:text="返回"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/quanzitextColor"
+            android:textSize="@dimen/dp32"
+            android:text="帖子详情"/>
+
+        <!-- <ImageView
+             android:id="@+id/goleftimg"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="@dimen/datamargin"
+             android:layout_toLeftOf="@id/data"
+             android:padding="@dimen/dp6"
+             android:src="@drawable/riqikuohao_l" />-->
+        <!--
+                <ImageView
+                    android:id="@+id/gorightimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/datamargin"
+                    android:layout_toRightOf="@id/data"
+                    android:padding="@dimen/dp6"
+                    android:src="@drawable/riqikuohao_r" />-->
+
+       <!-- <TextView
+            android:id="@+id/qiandaotv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mainmargin"
+            android:background="@drawable/qd_bg"
+            android:gravity="center"
+            android:text="签到"
+            android:textColor="@color/white" />-->
+    </RelativeLayout>
+</FrameLayout>

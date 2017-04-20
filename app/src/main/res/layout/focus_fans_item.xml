@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp140">
+
+    <RelativeLayout
+        android:id="@+id/userlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/focuslayout">
+
+        <ImageView
+            android:id="@+id/headicon"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp24"
+            android:layout_marginRight="@dimen/dp20"
+            android:src="@drawable/logo"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/headicon">
+
+            <TextView
+                android:id="@+id/nametv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是你二大妈"
+                android:textSize="@dimen/dp32"/>
+
+            <TextView
+                android:id="@+id/infotv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nametv"
+                android:text="孕期5周8天"
+                android:textColor="@color/greytext"
+                android:textSize="@dimen/dp24"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/focuslayout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp24">
+
+        <ImageView
+            android:id="@+id/focusimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guanzhuanniu"/>
+
+        <TextView
+            android:id="@+id/focustv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/focusimg"
+            android:layout_centerHorizontal="true"
+            android:text="加关注"
+            android:textColor="@color/greytext"
+            android:textSize="@dimen/dp24"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:id="@+id/greyline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linesmil"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginRight="@dimen/dp24"
+        android:background="@color/noticegreybg">
+    </View>
+</RelativeLayout>

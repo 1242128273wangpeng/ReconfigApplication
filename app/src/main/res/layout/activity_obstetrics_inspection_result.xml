@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_head_2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/zhucolor"
+        android:paddingLeft="@dimen/size_13"
+        android:paddingRight="@dimen/size_13"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ZhuTextwhite"
+            android:layout_gravity="left|center"
+            android:text="妇科就诊报告"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ZhuTextwhite"
+            android:layout_gravity="right|center"
+            android:gravity="right"
+            android:text="2016/10/12"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/include_recordparticulars1"
+                />
+            <include layout="@layout/include_recordparticulars2"
+                />
+            <include layout="@layout/include_recordparticulars3"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_margin"
+
+                android:paddingRight="@dimen/layout_margin"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_frame_gray"
+                    style="@style/TextStyle15black"
+                    android:layout_marginRight="-10dp"
+                    android:text="状态"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/padding5">
+
+                </TextView>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/table_frame_gray"
+                    style="@style/TextStyle15grey"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_margin"
+
+                android:paddingRight="@dimen/layout_margin"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_frame_gray"
+                    style="@style/TextStyle15black"
+                    android:layout_marginRight="-10dp"
+                    android:text="诊断"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/padding5">
+
+                </TextView>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/table_frame_gray"
+                    style="@style/TextStyle15grey"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5">
+                </TextView>
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin"
+
+        android:paddingRight="@dimen/layout_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15black"
+            android:layout_marginRight="-10dp"
+            android:text="健康指导"
+            android:gravity="left"
+            android:paddingLeft="@dimen/padding5">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/care"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15grey"
+           android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15black"
+            android:layout_marginRight="-10dp"
+            android:text="主诊医生"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/doctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15grey"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15black"
+            android:layout_marginRight="-10dp"
+            android:text="就诊医院"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/hospital"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/table_frame_gray"
+            style="@style/TextStyle15grey"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5">
+        </TextView>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_margin"
+
+                android:paddingRight="@dimen/layout_margin"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_frame_gray"
+                    style="@style/TextStyle15black"
+                    android:layout_marginRight="-10dp"
+                    android:text="复诊时间"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/padding5">
+
+                </TextView>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/table_frame_gray"
+                    style="@style/TextStyle15grey"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5">
+                </TextView>
+            </LinearLayout>
+
+            </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

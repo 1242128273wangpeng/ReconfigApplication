@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlhuifu"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/huifudekuang">
+
+        <ImageView
+            android:id="@+id/ivhuifutoxiang"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/huifitixingtouxiangquan"
+            android:src="@drawable/yunmaquan" />
+
+        <ImageView
+            android:id="@+id/ivhuifutoxiangyinying"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/huifitixingtouxiangquan"
+            android:src="@drawable/huifitixingtouxiangquan" />
+
+        <TextView
+            android:id="@+id/tvhuifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/ivhuifutoxiang"
+            android:text="333条新回复"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp24" />
+
+        <ImageView
+            android:id="@+id/ivhuifujiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@id/tvhuifu"
+            android:src="@drawable/huifutixing" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#e5e5e5" />
+</LinearLayout>

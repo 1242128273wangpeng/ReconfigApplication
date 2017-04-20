@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--文字的状态选择器-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中 -->
+    <item android:color="#3ed7df" android:state_checked="true"></item>
+    <!-- 按下 -->
+    <item android:color="#3ed7df" android:state_pressed="true"></item>
+    <!-- 抬起 -->
+    <item android:color="#a7a7a7a7"></item>
+
+</selector>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/smallwhite"
+        android:orientation="vertical">
+
+        <android.dayou.com.baoma.view.myview.banner.Banner
+            android:id="@+id/banner1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp200"
+            android:layout_marginTop="@dimen/dp16"
+            app:image_scale_type="fit_xy"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp180"
+            android:layout_marginTop="@dimen/dp16"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/onekey_yuyue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/onekeyimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:src="@drawable/hongshizi"/>
+
+                <TextView
+                    android:id="@+id/onekey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp54"
+                    android:layout_toRightOf="@id/onekeyimg"
+                    android:text="一键预约"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/onekey"
+                    android:layout_marginTop="@dimen/dp22"
+                    android:layout_toRightOf="@id/onekeyimg"
+                    android:text="免费预约 方便快捷"
+                    android:textColor="@color/greyfont7"
+                    android:textSize="@dimen/dp22"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dp6"
+                android:layout_height="match_parent"
+                android:background="@color/smallwhite"
+                />
+
+            <RelativeLayout
+                android:id="@+id/server_zixun"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/zixunimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:src="@drawable/fuwuzixun"/>
+
+                <TextView
+                    android:id="@+id/zixuntv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp54"
+                    android:layout_toRightOf="@id/zixunimg"
+                    android:text="服务咨询"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zixuntv"
+                    android:layout_marginTop="@dimen/dp22"
+                    android:layout_toRightOf="@id/zixunimg"
+                    android:text="在家咨询 专业解答"
+                    android:textColor="@color/greyfont7"
+                    android:textSize="@dimen/dp22"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_marginTop="@dimen/dp16"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="健康信息"
+            android:textColor="@color/greyfont7"
+            android:textSize="@dimen/dp24"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/smallwhite"/>
+
+        <GridView
+            android:id="@+id/grid2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="@dimen/dp20"
+            android:background="@color/white"
+            android:numColumns="3"/>
+
+        <android.dayou.com.baoma.view.myview.banner.Banner
+            android:id="@+id/banner2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp200"
+            app:image_scale_type="fit_xy"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64"
+            android:layout_marginTop="@dimen/dp16"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mainmargin"
+                android:text="@string/recomand"
+                android:textColor="@color/blacktext"
+                android:textSize="@dimen/dp34"/>
+
+
+            <ImageView
+                android:id="@+id/moreimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/mainmargin"
+                android:src="@drawable/more"/>
+
+            <TextView
+                android:id="@+id/moretext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_toLeftOf="@id/moreimg"
+                android:padding="@dimen/dp6"
+                android:text="@string/morestr"
+                android:textColor="@color/greytext"
+                android:textSize="@dimen/dp24"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+        <ListView
+            android:id="@+id/recomandlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/greybg"
+            android:dividerHeight="0.5dp"/>
+    </LinearLayout>
+</LinearLayout>
